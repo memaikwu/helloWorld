@@ -1,0 +1,31 @@
+p {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: blue; /* colors blue and olive are known to correlate well on webpages */
+}
+
+h2 {
+    color: olive;
+    font-size: 20px;
+    font-family: 'Arial' , sans-serif; /*consistency with paragraphs */
+}
+
+#special-paragraph {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 300px;
+}
+
+    .highlight {
+    background-color: #ffff99;
+    padding: 10px; /* Adds  space inside  paragraph */
+    border-radius: 5px; /* Gives these corners a slight rounding */
+}
+
+img.logo {
+    width: 100px;
+    height: 100px;
+}
+
+
+
