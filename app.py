@@ -21,6 +21,7 @@ def course():
 
     return render_template('favorite_course.html')
 
+
 @app.route('/contact' , methods=['GET' , 'POST'])
 def contact():
     if request.method == 'POST':

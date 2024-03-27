@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking the external CSS file -->
+</head>
+<body>
+
+<div class="navbar">
+    <img src="path/to/your/company_logo.png" alt="Company Logo" class="logo"> <!-- Placeholder for company logo -->
+    <a href="/static">Home</a>
+    <a href="/login">Login</a>
+    <a href="/create-account">Create an Account</a>
+</div>
+
+<div class="form-container">
+    <form action="/path_to_your_server_endpoint" method="post" class="account-form">
+        <h2>Create an Account</h2>
+
+        <input type="email" name="email" id="email" placeholder="Email" required class="form-input">
+
+        <input type="text" name="name" id="name" placeholder="Name" required class="form-input">
+
+        <input type="password" name="password" id="password" placeholder="Password" required class="form-input">
+
+        <select name="userType" id="userType" class="form-input">
+            <option value="">Select User Type</option>
+            <option value="toca_coach">Toca Coach</option>
+            <option value="external_coach_renter">External Coach/Renter</option>
+        </select>
+
+        <input type="submit" value="Create Account" class="btn btn-primary">
+
+        <button type="button" onclick="window.location='/'" class="btn btn-link">Return to Homepage</button>
+    </form>
+</div>
+
+</body>
+</html>
