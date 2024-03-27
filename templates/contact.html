@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+    {% if form_submitted == True %}
+        <div>
+            <h1> Thank you for submitting your information!</h1>
+            <h3> First Name: {{ first_name }} </h3>
+            <h3> Last Name: {{ last_name }} </h3>
+            <h3> Email: {{ email }} </h3>
+            <h3> Major: {{ major }} </h3>
+        </div>
+
+    {% else %}
+        <form action="http://127.0.0.1:5000/contact" method="post">
+          <div class="form-group">
+            <label for="firstnameInput1">First Name</label>
+            <input type="text" class="form-control" id="firstnameInput1" name="firstnameInput1" aria-describedby="firstName" placeholder="Enter first name.">
+          </div>
+          <div class="form-group">
+            <label for="lastnameInput1">Last Name</label>
+            <input type="text" class="form-control" id="lastnameInput1" name="lastnameInput1" aria-describedby="lastName" placeholder="Enter last name.">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="emailInput1" name="emailInput1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputMajor1">Major</label>
+            <input type="major" class="form-control" id="majorInput1" name="majorInput1">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    {% endif %}
+
+{%  endblock %}
