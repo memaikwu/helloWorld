@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 
-
-
 {% block content %}
 
     {% if form_submitted == True %}
@@ -17,19 +15,19 @@
         <form action="http://127.0.0.1:5000/contact" method="post">
           <div class="form-group">
             <label for="firstnameInput1">First Name</label>
-            <input type="text" class="form-control" id="firstnameInput1" name="firstnameInput1" aria-describedby="firstName" placeholder="Enter first name.">
+            <input type="text" class="form-control" id="firstnameInput1" name="firstnameInput1" placeholder="Enter first name.">
           </div>
           <div class="form-group">
             <label for="lastnameInput1">Last Name</label>
-            <input type="text" class="form-control" id="lastnameInput1" name="lastnameInput1" aria-describedby="lastName" placeholder="Enter last name.">
+            <input type="text" class="form-control" id="lastnameInput1" name="lastnameInput1"  placeholder="Enter last name.">
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="emailInput1" name="emailInput1" aria-describedby="emailHelp" placeholder="Enter email">
+            <label for="emailInput1">Email address</label>
+            <input type="email" class="form-control" id="emailInput1" name="emailInput1" placeholder="Enter email">
           </div>
           <div class="form-group">
-            <label for="exampleInputMajor1">Major</label>
-            <input type="major" class="form-control" id="majorInput1" name="majorInput1">
+            <label for="majorInput1">Major</label>
+            <input type="text" class="form-control" id="majorInput1" name="majorInput1">
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
